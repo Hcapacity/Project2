@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"wt901\startup_stm32f103xb.o"
+"wt901\main.o"
+"wt901\stm32f1xx_it.o"
+"wt901\stm32f1xx_hal_msp.o"
+"wt901\stm32f1xx_hal_gpio_ex.o"
+"wt901\stm32f1xx_hal_tim.o"
+"wt901\stm32f1xx_hal_tim_ex.o"
+"wt901\stm32f1xx_hal_uart.o"
+"wt901\stm32f1xx_hal.o"
+"wt901\stm32f1xx_hal_rcc.o"
+"wt901\stm32f1xx_hal_rcc_ex.o"
+"wt901\stm32f1xx_hal_gpio.o"
+"wt901\stm32f1xx_hal_dma.o"
+"wt901\stm32f1xx_hal_cortex.o"
+"wt901\stm32f1xx_hal_pwr.o"
+"wt901\stm32f1xx_hal_flash.o"
+"wt901\stm32f1xx_hal_flash_ex.o"
+"wt901\stm32f1xx_hal_exti.o"
+"wt901\system_stm32f1xx.o"
+"wt901\readangle.o"
+"wt901\resetzaxis.o"
+--strict --scatter "WT901\WT901.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "WT901.map" -o WT901\WT901.axf
